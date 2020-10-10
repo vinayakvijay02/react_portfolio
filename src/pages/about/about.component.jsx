@@ -28,14 +28,21 @@ const About = () => {
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
                 Hi there! I am <strong>&nbsp;Vinayak</strong>
-                {/* <br />A passionate programmer and a Coach, born and brought up in India. I am a Full Stack Web Developer with React.js, Redux, Express.js, Node.js, and PostgreSQL as my tech stack.
+                <br />A passionate programmer and a Gamer, born and brought up
+                in Mumbai (India). I am a Full Stack Web Developer with
+                React.js, Redux, Express.js, Node.js, and SQL as my tech stack.
                 <br />
-                In 2019, I successfully completed my Engineering with specialization in 'Electronics and Telecommunication'.
+                In 2017, I successfully completed my Masters in Infromation
+                Technology and Systems from University of Canberra (Australia).
                 <br />
-                Working with the clients, my goal is always driven towards providing amazing experience with the best level of quality and service to them.
+                Working with the clients, my goal is always driven towards
+                providing amazing experience with the best level of quality and
+                service to them.
                 <br />
-                Along with that, I also help people as a COACH on their journey of becoming a professional programmer. I love learning about new technologies, what problems are they solving and How can I use them to build better and scalable products.
-                <br /> <br /> */}
+                I love learning about new technologies, what problems are they
+                solving and How can I use them to build better and scalable
+                products.
+                <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>
                     <a href="#contact">
@@ -46,7 +53,7 @@ const About = () => {
                   </div>
                   <div>
                     <a
-                      href="https://drive.google.com/file/d/1MOzv1uAOadz1H8F8apv50F9RHTeTZHiu/view?usp=sharing"
+                      href="https://drive.google.com/file/d/11wsmtfaO0cd42tWcV2V1vo67gZTvBBIt/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -57,7 +64,7 @@ const About = () => {
                   </div>
                   <div>
                     <a
-                      href="https://github.com/akjha96"
+                      href="https://github.com/vinayakvijay02"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -23,6 +23,9 @@ import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_GOLANG from "../../assets/img/skills/go-6.svg";
 import L_PYTHON from "../../assets/img/skills/python.svg";
+import L_ANDROID from  "../../assets/img/skills/android.svg";
+import L_JAVA from  "../../assets/img/skills/java.svg";
+import L_CSHARPE from  "../../assets/img/skills/cSharp.svg";
 
 export const skills = {
   frontend: [
@@ -107,44 +110,44 @@ export const skills = {
       imgSrc: L_EXPRESS,
       skillName: "Express",
     },
-    {
-      link: "https://www.djangoproject.com/",
-      imgAltText: "Django",
-      imgSrc: L_DJANGO,
-      skillName: "Django",
-    },
-    {
-      link: "https://flask.palletsprojects.com/",
-      imgAltText: "Flask",
-      imgSrc: L_FLASK,
-      skillName: "Flask",
-    },
+    // {
+    //   link: "https://www.djangoproject.com/",
+    //   imgAltText: "Django",
+    //   imgSrc: L_DJANGO,
+    //   skillName: "Django",
+    // },
+    // {
+    //   link: "https://flask.palletsprojects.com/",
+    //   imgAltText: "Flask",
+    //   imgSrc: L_FLASK,
+    //   skillName: "Flask",
+    // },
   ],
   hostingPlatforms: [
-    {
-      link: "https://www.heroku.com/",
-      imgAltText: "Heroku",
-      imgSrc: L_HEROKU,
-      skillName: "Heroku",
-    },
-    {
-      link: "https://www.digitalocean.com/",
-      imgAltText: "Digital Ocean",
-      imgSrc: L_DIGITAL_OCEAN,
-      skillName: "Digital Ocean",
-    },
+    // {
+    //   link: "https://www.heroku.com/",
+    //   imgAltText: "Heroku",
+    //   imgSrc: L_HEROKU,
+    //   skillName: "Heroku",
+    // },
+    // {
+    //   link: "https://www.digitalocean.com/",
+    //   imgAltText: "Digital Ocean",
+    //   imgSrc: L_DIGITAL_OCEAN,
+    //   skillName: "Digital Ocean",
+    // },
     {
       link: "https://pages.github.com/",
       imgAltText: "GitHub Pages",
       imgSrc: L_GITHUB_PAGES,
       skillName: "GitHub Pages",
     },
-    {
-      link: "https://www.pythonanywhere.com/",
-      imgAltText: "pythonanywhere",
-      imgSrc: L_PYTHONANYWHERE,
-      skillName: "PythonAnywhere",
-    },
+    // {
+    //   link: "https://www.pythonanywhere.com/",
+    //   imgAltText: "pythonanywhere",
+    //   imgSrc: L_PYTHONANYWHERE,
+    //   skillName: "PythonAnywhere",
+    // },
   ],
   programmingLanguages: [
     {
@@ -153,12 +156,12 @@ export const skills = {
       imgSrc: L_JAVASCRIPT,
       skillName: "JavaScript",
     },
-    {
-      link: "https://www.typescriptlang.org/",
-      imgAltText: "TypeScript",
-      imgSrc: L_TYPESCRIPT,
-      skillName: "TypeScript",
-    },
+    // {
+    //   link: "https://www.typescriptlang.org/",
+    //   imgAltText: "TypeScript",
+    //   imgSrc: L_TYPESCRIPT,
+    //   skillName: "TypeScript",
+    // },
     {
       link: "https://www.python.org/",
       imgAltText: "Python",
@@ -166,11 +169,23 @@ export const skills = {
       skillName: "Python",
     },
     {
-      link: "https://golang.org/",
-      imgAltText: "Golang",
-      imgSrc: L_GOLANG,
-      skillName: "Golang",
+      link: "https://www.python.org/",
+      imgAltText: "Java",
+      imgSrc: L_JAVA,
+      skillName: "Java",
     },
+    {
+      link: "https://www.python.org/",
+      imgAltText: "C#",
+      imgSrc: L_CSHARPE,
+      skillName: "C#",
+    },
+    // {
+    //   link: "https://golang.org/",
+    //   imgAltText: "Golang",
+    //   imgSrc: L_GOLANG,
+    //   skillName: "Golang",
+    // },
   ],
   databases: [
     {
@@ -194,4 +209,14 @@ export const skills = {
       skillName: "GIT",
     },
   ],
+  
+  mobilePlatform: [
+    {
+      link: "https://developer.android.com/studio/write/sample-code",
+      imgAltText: "Android",
+      imgSrc: L_ANDROID,
+      skillName: "Android",
+    },
+  ],
+  
 };

@@ -2,8 +2,8 @@ import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects
-import L_GetGitHubInfo from "../../assets/img/projects/covid_screenshot.webp";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
+import L_GETCOVIDINFO from "../../assets/img/projects/covid_screenshot.webp";
+import L_POKEDEX from "../../assets/img/projects/screenShotPokedex.webp";
 import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
 import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
 import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
@@ -23,6 +23,8 @@ import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
 import L_DJANGO from "../../assets/img/skills/django.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
+import L_AXIOS from "../../assets/img/skills/axios.svg";
+
 
 import "./projects-timeline.styles.css";
 
@@ -32,12 +34,12 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
-          {/* Project: Get GitHub Info */}
+          {/* Project: Get Covid Info */}
           <ImageEvent
             date="19/07/2020"
             className="text-center"
             text="COVID INFO"
-            src={L_GetGitHubInfo}
+            src={L_GETCOVIDINFO}
             alt="Get GitHub Info"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
@@ -54,13 +56,13 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that searches
-                        people on GitHub with non-private account and see all
-                        their details using GitHub API
+                        <strong>Description:</strong> An app the give complete
+                        infromation about covid around the world. Able to filter
+                        and analysis covid cases in respecitve country.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Search any Github profile</li>
+                          <li>Search covid ratio by country </li>
                           <li>Real-time API calls</li>
                         </ul>
                         <hr />
@@ -107,7 +109,7 @@ const TimeLine = () => {
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              GitHub API
+                              Disease-sh GITHUB API
                             </span>
                           </li>
                         </ul>
@@ -129,18 +131,18 @@ const TimeLine = () => {
                 >
                   SOURCE CODE
                 </UrlButton>
-                <UrlButton
+                {/* <UrlButton
                   href="https://www.youtube.com/watch?v=K3h95l2YxmY&feature=youtu.be"
                   target="_blank"
                 >
                   WATCH VIDEO
-                </UrlButton>
+                </UrlButton> */}
               </div>
             </div>
           </ImageEvent>
 
-          {/* Project: Smart Brain */}
-          {/* <ImageEvent date="21/01/2020" className="text-center" text="Smart Brain Face Detect app" src={L_SmartBrain} alt="Smart Brain Face Detect">
+          {/* Project: Pokedex */}
+          <ImageEvent date="21/08/2020" className="text-center" text="Pokemon Search app" src={L_POKEDEX} alt="Pokemon Search">
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
@@ -151,14 +153,7 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that detects face in a picture.
-                        <hr />
-                        <strong>Features:</strong>
-                        <ul className="list-styles pt-1">
-                          <li>Register new user</li>
-                          <li>Signin exiting user</li>
-                          <li>Keep tracks of entries for each user</li>
-                        </ul>
+                        <strong>Description:</strong> An app that search pokemon and show individual pokemon details
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
@@ -169,52 +164,29 @@ const TimeLine = () => {
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_NODE_JS} alt="Node.js" rounded className="image-style1 m-1"></Image> Node.js
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image src={L_EXPRESS} alt="Express" rounded className="image-style1 m-1"></Image> Express
-                            </span>
-                          </li>
-                          <li>
-                            <span className="p-2">
-                              <Image src={L_POSTGRESQL} alt="PostgreSQL" rounded className="image-style1 m-1"></Image> PostgreSQL
+                              <Image src={L_AXIOS} alt="Axios" rounded className="image-style1 m-1"></Image> Axios
                             </span>
                           </li>
                         </ul>
                         <hr />
-                        <em>
-                          <strong>SignUp/ Signin:</strong>
-                          <br />
-                          <br />
-                          You can <strong>register</strong> as new user or <strong>log in</strong> using the demo account below.
-                          <br />
-                          <br />
-                          <strong>Demo Account Details:</strong>
-                          <br />
-                          email: demo@demo.com
-                          <br />
-                          password: demo
-                        </em>
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://smart-face-detect-app.herokuapp.com/" target="_blank">
+                <UrlButton href="https://vinayakvijay02.github.io/react_pokedex/" target="_blank">
                   SEE LIVE
                 </UrlButton>
-                <UrlButton href="https://github.com/akjha96/Smart_Brain" target="_blank">
+                <UrlButton href="https://github.com/vinayakvijay02/react_pokedex/tree/master" target="_blank">
                   SOURCE CODE
                 </UrlButton>
-                <UrlButton href="https://www.youtube.com/watch?v=ZZYSpi_blL0" target="_blank">
+                {/* <UrlButton href="https://www.youtube.com/watch?v=ZZYSpi_blL0" target="_blank">
                   WATCH VIDEO
-                </UrlButton>
+                </UrlButton> */}
               </div>
             </div>
-          </ImageEvent> */}
+          </ImageEvent> 
 
           {/* Project: RoboFriends */}
 
