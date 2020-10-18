@@ -1,14 +1,14 @@
 import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
+import Accordion from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
 
 // projects
 import L_GETCOVIDINFO from "../../assets/img/projects/covid_screenshot.webp";
 import L_POKEDEX from "../../assets/img/projects/screenShotPokedex.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
+import L_AmazonClone from "../../assets/img/projects/AmazonClone.webp";
 import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
-import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
+import L_ZIKAVIRUS from "../../assets/img/projects/zikavirus.webp";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -24,6 +24,12 @@ import L_DJANGO from "../../assets/img/skills/django.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_AXIOS from "../../assets/img/skills/axios.svg";
+import L_FIREBASE from "../../assets/img/skills/firebase.svg";
+import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
+import L_ANDROID from "../../assets/img/skills/android.svg";
+import L_PHP from "../../assets/img/skills/php.svg";
+import L_GOOGLEMAP from "../../assets/img/skills/googlemap.svg";
+
 
 
 import "./projects-timeline.styles.css";
@@ -34,6 +40,93 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+          {/* Project: Zika Virus mhealth */}
+          <ImageEvent
+            date="20/11/2016"
+            className="text-center"
+            text=" Zika Virus mhealth "
+            src={L_ZIKAVIRUS}
+            alt=" Zika Virus mhealth "
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> An app that show zika virus details.
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_ANDROID}
+                                alt="Android"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Android 
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_PHP}
+                                alt="PHP"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              PHP
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_GOOGLEMAP}
+                                alt="Axios"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Google Map Api
+                            </span>
+                          </li>
+                        </ul>
+                        <hr />
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                {/* <UrlButton
+                  href="https://vinayakvijay02.github.io/react_pokedex/"
+                  target="_blank"
+                >
+                  SEE LIVE
+                </UrlButton>
+                <UrlButton
+                  href="https://github.com/vinayakvijay02/react_pokedex/tree/master"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton> */}
+                <UrlButton href="https://youtu.be/KplEWjxBMMc" target="_blank">
+                  WATCH VIDEO
+                </UrlButton>
+              </div>
+            </div>
+          </ImageEvent>
+
+
           {/* Project: Get Covid Info */}
           <ImageEvent
             date="19/07/2020"
@@ -142,29 +235,52 @@ const TimeLine = () => {
           </ImageEvent>
 
           {/* Project: Pokedex */}
-          <ImageEvent date="21/08/2020" className="text-center" text="Pokemon Search app" src={L_POKEDEX} alt="Pokemon Search">
+          <ImageEvent
+            date="21/08/2020"
+            className="text-center"
+            text="Pokemon Search app"
+            src={L_POKEDEX}
+            alt="Pokemon Search"
+          >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
                   <Card>
-                    <Accordion.Toggle as={Card.Header} eventKey="0" className="p-2 text-center accordian-main">
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
                       PROJECT DETAILS
                     </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that search pokemon and show individual pokemon details
+                        <strong>Description:</strong> An app that search pokemon
+                        and show individual pokemon details
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
                           <li>
                             <span className="p-2">
-                              <Image src={L_REACT} alt="React" rounded className="image-style1 m-1"></Image> React
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_AXIOS} alt="Axios" rounded className="image-style1 m-1"></Image> Axios
+                              <Image
+                                src={L_AXIOS}
+                                alt="Axios"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Axios
                             </span>
                           </li>
                         </ul>
@@ -175,10 +291,16 @@ const TimeLine = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://vinayakvijay02.github.io/react_pokedex/" target="_blank">
+                <UrlButton
+                  href="https://vinayakvijay02.github.io/react_pokedex/"
+                  target="_blank"
+                >
                   SEE LIVE
                 </UrlButton>
-                <UrlButton href="https://github.com/vinayakvijay02/react_pokedex/tree/master" target="_blank">
+                <UrlButton
+                  href="https://github.com/vinayakvijay02/react_pokedex/tree/master"
+                  target="_blank"
+                >
                   SOURCE CODE
                 </UrlButton>
                 {/* <UrlButton href="https://www.youtube.com/watch?v=ZZYSpi_blL0" target="_blank">
@@ -186,55 +308,96 @@ const TimeLine = () => {
                 </UrlButton> */}
               </div>
             </div>
-          </ImageEvent> 
+          </ImageEvent>
 
-          {/* Project: RoboFriends */}
+          {/* Project: Amazon Clone */}
 
-          {/* <ImageEvent date="14/01/2020" className="text-center" text="RoboFriends" src={L_RoboFriends} alt="Robo Friends">
+          <ImageEvent
+            date="18/10/2020"
+            className="text-center"
+            text="Amazon Clone"
+            src={L_AmazonClone}
+            alt="Amazon Clone"
+          >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
                 <Accordion>
                   <Card>
-                    <Accordion.Toggle as={Card.Header} eventKey="0" className="p-2 text-center accordian-main">
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
                       PROJECT DETAILS
                     </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that allows to search through robots fetched in real-time with users.
+                        <strong>Description:</strong> An app that allows to
+                        search through robots fetched in real-time with users.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Search through Robots</li>
-                          <li>Users and Robots being fetched via API call</li>
-                          <li>Usage of Redux store</li>
+                          <li>Show product list</li>
+                          <li>Add and Remove from the cart</li>
+                          <li>Show cart total</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
                           <li>
                             <span className="p-2">
-                              <Image src={L_REACT} alt="React" rounded className="image-style1 m-1"></Image> React
+                              <Image
+                                src={L_REACT}
+                                alt="React"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_REDUX} alt="Redux" rounded className="image-style m-1"></Image> Redux
+                              <Image
+                                src={L_REDUX}
+                                alt="Redux"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Redux
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_NODE_JS} alt="Node.js" rounded className="image-style1 m-1"></Image> Node.js
+                              <Image
+                                src={L_NODE_JS}
+                                alt="Node.js"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Node.js
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_EXPRESS} alt="Express" rounded className="image-style1 m-1"></Image> Express
+                              <Image
+                                src={L_MATERIALUI}
+                                alt="Express"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Material UI
                             </span>
                           </li>
                           <li>
                             <span className="p-2">
-                              <Image src={L_POSTGRESQL} alt="PostgreSQL" rounded className="image-style1 m-1"></Image> PostgreSQL
+                              <Image
+                                src={L_FIREBASE}
+                                alt="PostgreSQL"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              firebase
                             </span>
                           </li>
                         </ul>
@@ -244,15 +407,18 @@ const TimeLine = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://akjha96.github.io/RoboFriends/" target="_blank">
+                <UrlButton href="https://clone-9ddd0.web.app/" target="_blank">
                   SEE LIVE
                 </UrlButton>
-                <UrlButton href="https://github.com/akjha96/RoboFriends" target="_blank">
+                <UrlButton
+                  href="https://github.com/vinayakvijay02/amazon-clone"
+                  target="_blank"
+                >
                   SOURCE CODE
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent> */}
+          </ImageEvent>
 
           {/* Project: Product_Hunt_Clone */}
 

@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e65f6f443fc01b5b7287a47fcb04498e",
+    "revision": "a91b4b669e4914d197c0eb72ddf429fb",
     "url": "/react_portfolio/index.html"
   },
   {
-    "revision": "58f3bf8ebbe4623c17a1",
+    "revision": "ca971f77caf250332f9c",
     "url": "/react_portfolio/static/css/main.b68d115f.chunk.css"
   },
   {
-    "revision": "57db03b1e7f63f9a13c0",
-    "url": "/react_portfolio/static/js/2.692fe032.chunk.js"
+    "revision": "615cc3881bde38c64566",
+    "url": "/react_portfolio/static/js/2.386e5f71.chunk.js"
   },
   {
     "revision": "114a0b4eb15c48d37cc38674dddb4692",
-    "url": "/react_portfolio/static/js/2.692fe032.chunk.js.LICENSE.txt"
+    "url": "/react_portfolio/static/js/2.386e5f71.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58f3bf8ebbe4623c17a1",
-    "url": "/react_portfolio/static/js/main.876dff39.chunk.js"
+    "revision": "ca971f77caf250332f9c",
+    "url": "/react_portfolio/static/js/main.8d98e550.chunk.js"
   },
   {
     "revision": "5397e927921dde71372c",
     "url": "/react_portfolio/static/js/runtime-main.d05fa38a.js"
   },
   {
-    "revision": "9730fefc26bb187c4f4bb29b95d82e7a",
-    "url": "/react_portfolio/static/media/Robofriends.9730fefc.webp"
+    "revision": "93c2d7e6aa73b6e1944d8858ce08dcdb",
+    "url": "/react_portfolio/static/media/AmazonClone.93c2d7e6.webp"
   },
   {
     "revision": "5378177bb3bf55dfffdf9e5e46178613",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react_portfolio/static/media/express.c6bab64b.svg"
   },
   {
+    "revision": "6caacd1ac451f5d5c012ebabcb25d071",
+    "url": "/react_portfolio/static/media/firebase.6caacd1a.svg"
+  },
+  {
     "revision": "d98463abd102acdc2b1eb8d5eb70b2d2",
     "url": "/react_portfolio/static/media/flask.d98463ab.svg"
   },
@@ -98,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "30bd42ea97a2e0454bb1dfbab983eb54",
     "url": "/react_portfolio/static/media/go-6.30bd42ea.svg"
+  },
+  {
+    "revision": "4ad67a79c009e503e164ffc724bf7d88",
+    "url": "/react_portfolio/static/media/googlemap.4ad67a79.svg"
   },
   {
     "revision": "b38ff61aa327fbdc24f7b1dad7d04d1a",
@@ -128,8 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react_portfolio/static/media/nodejs.a1231528.svg"
   },
   {
-    "revision": "95dd3e00f0920b6bed086d4a30d5b027",
-    "url": "/react_portfolio/static/media/portfolioUsingDjango.95dd3e00.webp"
+    "revision": "44403f1eece67c892a0c6a6791da5ad4",
+    "url": "/react_portfolio/static/media/php.44403f1e.svg"
   },
   {
     "revision": "d7c985e7cca077dc2d77f89a66573e35",
@@ -186,5 +194,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b475218dc8b71a58c56d0dc5f3f5959",
     "url": "/react_portfolio/static/media/v_logo.4b475218.webp"
+  },
+  {
+    "revision": "5f5ddb3c5d4be5c0dc1c9ce4e810571d",
+    "url": "/react_portfolio/static/media/zikavirus.5f5ddb3c.webp"
   }
 ]);
