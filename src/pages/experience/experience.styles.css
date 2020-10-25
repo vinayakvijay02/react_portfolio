@@ -7,8 +7,10 @@
 }
 
 .jumbo-style {
-  background-image: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
+  background-image: linear-gradient(-225deg, #8e9eab 0%, #eef2f3 48%, #8e9eab 100%);
 }
+
+
 
 .body-title-style {
   font-size: 25px;

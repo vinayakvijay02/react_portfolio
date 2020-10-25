@@ -11,71 +11,81 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import ContactForm from "./pages/contact-form/contact-form.component";
 import { Parallax } from "react-parallax";
+import PhotoGallery from "./components/gallery/PhotoGallery";
 // import Particles from "react-particles-js";
 // import { particlesOptions } from "./particlesOptions";
 import FooterPanel from "./components/footer/footer.component";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="App" style={{ position: "relative" }}>
-      <MyNavbar />
-      <MyCarousal />
-      <MyTitleMessage />
-
-      {/* <Particles
+    <Router>
+      <div className="App" style={{ position: "relative" }}>
+        <Switch>
+          <Route path="/photoGallery">
+            <PhotoGallery />
+          </Route>
+          <Route path="/">
+            {/* <Particles
         className="particles particles-box"
         params={particlesOptions}
       /> */}
 
-      <div>
-        <Parallax
-          blur={{ min: -30, max: 30 }}
-          bgImage={require("./assets/img/parallex/background.webp")}
-          bgImageAlt=""
-          strength={-200}
-        >
-          <div>
+            <div>
+              <Parallax
+                blur={{ min: -30, max: 30 }}
+                bgImage={require("./assets/img/parallex/background.webp")}
+                bgImageAlt=""
+                strength={-200}
+              >
+                <MyNavbar />
+                <MyCarousal />
+                <MyTitleMessage />
+              </Parallax>
+            </div>
+
+            <div>
+              <Container className="container-box rounded">
+                <Fade duration={500}>
+                  <About />
+                </Fade>
+              </Container>
+            </div>
+            <Container className="container-box rounded">
+              <Slide bottom duration={500}>
+                <hr />
+                <Skills />
+              </Slide>
+            </Container>
+            <div>
+              <Container className="container-box rounded">
+                <Fade duration={500}>
+                  <hr />
+
+                  <Experience />
+                </Fade>
+              </Container>
+            </div>
+            <Container className="container-box rounded">
+              <Slide bottom duration={500}>
+                <hr />
+                <TimeLine />
+              </Slide>
+            </Container>
             <Container className="container-box rounded">
               <Fade duration={500}>
-                <About />
+                <hr />
+                <ContactForm />
               </Fade>
             </Container>
-          </div>
-        </Parallax>
-      </div>
-      <Container className="container-box rounded">
-        <Slide bottom duration={500}>
-          <hr />
-          <Skills />
-        </Slide>
-      </Container>
-      <div>
-        <Container className="container-box rounded">
-          <Fade duration={500}>
+
             <hr />
-
-            <Experience />
-          </Fade>
-        </Container>
+            <FooterPanel />
+          </Route>
+        </Switch>
       </div>
-      <Container className="container-box rounded">
-        <Slide bottom duration={500}>
-          <hr />
-          <TimeLine />
-        </Slide>
-      </Container>
-      <Container className="container-box rounded">
-        <Fade duration={500}>
-          <hr />
-          <ContactForm />
-        </Fade>
-      </Container>
-
-      <hr />
-      <FooterPanel />
-    </div>
+    </Router>
   );
 };
 

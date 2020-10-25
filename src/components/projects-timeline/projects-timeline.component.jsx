@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -9,6 +9,7 @@ import L_POKEDEX from "../../assets/img/projects/screenShotPokedex.webp";
 import L_AmazonClone from "../../assets/img/projects/AmazonClone.webp";
 import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
 import L_ZIKAVIRUS from "../../assets/img/projects/zikavirus.webp";
+import L_AKLIMA from "../../assets/img/projects/Aklima.webp";
 
 // skills
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -29,8 +30,11 @@ import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import L_ANDROID from "../../assets/img/skills/android.svg";
 import L_PHP from "../../assets/img/skills/php.svg";
 import L_GOOGLEMAP from "../../assets/img/skills/googlemap.svg";
+import L_ILLUSTRATOR from "../../assets/img/skills/adobeIllustrator.svg";
+import L_PHOTOSHOP from "../../assets/img/skills/photoshop.svg";
+import L_CORELDRAW from "../../assets/img/skills/coreldraw.svg";
 
-
+import { Link } from "react-router-dom";
 
 import "./projects-timeline.styles.css";
 
@@ -40,6 +44,98 @@ const TimeLine = () => {
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
       <Timeline>
         <Events>
+          <ImageEvent
+            date="14/06/2014"
+            className="text-center"
+            text="AKLIMA"
+            src={L_AKLIMA}
+            alt="Aklima"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <photoGallery />
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> Aklima a fashion design
+                        shop's brand kit.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Complete brand kit </li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_ILLUSTRATOR}
+                                alt="Illustrator"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Adobe Illustrator
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_PHOTOSHOP}
+                                alt="photoshop"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              Adobe photoshop
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CORELDRAW}
+                                alt=" Corel Draw"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Corel Draw
+                            </span>
+                          </li>
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <Link to="/photoGallery" target="_blank">
+                  <UrlButton>SEE LIVE</UrlButton>
+                </Link>
+
+                <UrlButton
+                  href="https://github.com/vinayakvijay02/covid_web/tree/master"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                {/* <UrlButton
+                  href="https://www.youtube.com/watch?v=K3h95l2YxmY&feature=youtu.be"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton> */}
+              </div>
+            </div>
+          </ImageEvent>
+
           {/* Project: Zika Virus mhealth */}
           <ImageEvent
             date="20/11/2016"
@@ -62,7 +158,8 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> An app that show zika virus details.
+                        <strong>Description:</strong> An app that show zika
+                        virus details.
                         <hr />
                         <strong>Tech used:</strong>
                         <ul>
@@ -74,7 +171,7 @@ const TimeLine = () => {
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Android 
+                              Android
                             </span>
                           </li>
                           <li>
@@ -125,7 +222,6 @@ const TimeLine = () => {
               </div>
             </div>
           </ImageEvent>
-
 
           {/* Project: Get Covid Info */}
           <ImageEvent
