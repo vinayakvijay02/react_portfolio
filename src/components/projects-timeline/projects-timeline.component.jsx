@@ -116,9 +116,9 @@ const TimeLine = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <Link to="/photoGallery" target="_blank">
+                {/* <Link to="/photoGallery" target="_blank">
                   <UrlButton>SEE LIVE</UrlButton>
-                </Link>
+                </Link> */}
 
                 <UrlButton
                   href="https://github.com/vinayakvijay02/covid_web/tree/master"

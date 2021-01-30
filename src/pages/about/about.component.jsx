@@ -32,7 +32,7 @@ const About = () => {
                 in Mumbai (India). I am a Full Stack Web Developer with
                 React.js, Redux, Express.js, Node.js, and SQL as my tech stack.
                 <br />
-                In 2017, I successfully completed my Masters in Infromation
+                In 2017, I successfully completed my Masters in Information. 
                 Technology and Systems from University of Canberra (Australia).
                 <br />
                 Working with the clients, my goal is always driven towards
