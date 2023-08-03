@@ -3,3 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.font-details {
+
+  font-weight: bold;
+  font-size: 3em;
+  /* font-weight: 500; */
+  color: white;
+}

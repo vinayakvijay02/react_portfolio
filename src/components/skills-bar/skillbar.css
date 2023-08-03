@@ -1,0 +1,14 @@
+.skillbar {
+  background: none;
+  height: 15px !important;
+  line-height: 15px !important;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.skillbar-percent {
+  color: #9a9da8;
+}
+.skillbar-title {
+  color: #9a9da8;
+  background: #191919;
+}

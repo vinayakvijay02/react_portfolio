@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 
-class Video extends Component {
-  render() {
-    return (
-      <div id="home">
-        <div className="player-wrapper">
+export default function Section({ title, subtitle, dark, id }) {
+  return (
+    <div>
+      <div id={id}>
+        <div className="player-wrapper" id={id}>
           <ReactPlayer
             url="https://vinayakvijay02.github.io/react_portfolio/videos/demo_video.mp4"
             muted={true}
@@ -14,12 +14,10 @@ class Video extends Component {
             className="react-player"
             playing
             width="100%"
-            height="80%"
+            height="100%"
           />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Video;

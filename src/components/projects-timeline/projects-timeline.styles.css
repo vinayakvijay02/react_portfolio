@@ -19,3 +19,9 @@
 .image-style1 {
   width: 3em;
 }
+.font-details {
+  font-weight: bold;
+  font-size: 3em;
+  /* font-weight: 500; */
+  color: white;
+}

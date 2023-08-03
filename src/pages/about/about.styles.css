@@ -3,10 +3,39 @@
   font-size: 1.1em;
 }
 
-.profile {
-  max-width: 18em;
+.img-thumbnail {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+.my-details {
+  background-color: #191919;
+  color: #9a9da8;
+}
+.font-details {
+  font-weight: bold;
+  font-size: 3em;
+  /* font-weight: 500; */
+  color: white;
+}
+.tabs-area {
+  margin-top: 10px;
+  width: 100%;
+}
+.single-tab-content span {
+  font-size: 1rem;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #048bfc;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.my-details {
-  background-color: rgba(255, 255, 255, 0.747);
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  color: #048bfc;
+  background-color: transparent;
+  border-color: transparent;
 }

@@ -1,5 +1,7 @@
 .focus {
   transition: transform 0.3s;
+  background-color: #191919;
+  color: white;
 }
 
 .focus:hover {
@@ -7,22 +9,22 @@
 }
 
 .card-title {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1em;
+  /* font-weight: 500; */
 }
 
 .image-style {
+  
   width: 3em;
 }
 
 .font-details {
-  font-size: 3em;
-  font-weight: 500;
-  color: #231d5af8;
-}
 
-.font-details-b {
+  font-weight: bold;
   font-size: 3em;
-  font-weight: 500;
-  color: #ffffff;
+  /* font-weight: 500; */
+  color: white;
+}
+.text-dark{
+  color: #9A9DA8!important;
 }

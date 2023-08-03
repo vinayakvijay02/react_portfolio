@@ -24,3 +24,11 @@ hr {
   height: 100%;
   z-index: 1;
 }
+.section-content {
+  margin: 0 auto;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.section {
+  /* margin-top: 30px; */
+}
