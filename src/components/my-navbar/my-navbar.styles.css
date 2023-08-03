@@ -1,0 +1,131 @@
+:root {
+  --off-white: #fafafa;
+}
+.navbar {
+  background-color: #191919 !important;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.ul-nav-items {
+  margin: 0%;
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+}
+
+.nav-item:hover {
+  color: #048bfc;
+  cursor: pointer;
+  text-decoration: none;
+  right: 0;
+}
+
+.nav-item:after {
+  border-color: #457dfb;
+  right: 0;
+}
+/* 
+.nav-item:after {
+  border-radius: 1em;
+  border-top: 0.1em solid #2f56b0;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+
+.nav-item:hover:after {
+  animation: anchor-underline 2s cubic-bezier(0, 0.5, 0, 1) infinite;
+  border-color: #457dfb;
+} */
+
+@keyframes anchor-underline {
+  0%,
+  10% {
+    left: 0;
+    right: 100%;
+  }
+  40%,
+  60% {
+    left: 0;
+    right: 0;
+  }
+  90%,
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+.section {
+}
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  /* max-width: 1024px;
+  margin: 0 auto; */
+  padding: 20px;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    background: #333;
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    background: #333;
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
+  }
+}
+.nav-item > .active {
+  color: #048bfc;
+  border-bottom: #048bfc;
+  border-bottom: 0.1rem solid;
+}

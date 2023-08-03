@@ -1,0 +1,26 @@
+.img-resize {
+  width: 15em;
+}
+
+.style {
+  font-size: 20px;
+}
+
+.jumbo-style {
+  background-color: #101010;
+  color: white!important;
+}
+.card{
+  background-color: #191919;
+  color: white!important;
+}
+
+
+
+.font-details {
+
+  font-weight: bold;
+  font-size: 3em;
+  /* font-weight: 500; */
+  color: white;
+}
